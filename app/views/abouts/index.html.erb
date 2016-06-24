@@ -1,1 +1,71 @@
-<h1>About Me</h1>
+<div class="container ">
+  <h1 class="text-center">About Me</h1>
+  <div class="row">
+    <%= image_tag 'steve.jpg', class: 'col-xs-3 col-xs-offset-1' %>
+    <p class="col-xs-6">
+      Stephen A. Akuffo works as a Pre-sales Solution Specialist at Dell Technologies. He has consulted with many small and medium size businesses to help them map IT infrastructure strategies and technology acquisition decisions.
+
+      Stephen is certified on multiple Dell and VMware Technologies. He carries a VMware Certified Professional certification and is a vExpert 2016
+
+      Currently learning to develop software to expand the kind of problems he can solve and to cultivate a bit of a creative edge. He hopes to blend his knowledge of infrastructure and backend software technologies in order to make cool things (that's a technical term).
+  </p>
+  </div>
+</div>
+
+<div class="clear">
+</div>
+
+<h1 class="text-center">My Projects</h1>
+<div class="container">
+  <div class ="row">
+    <div class="col-xs-3 col-xs-offset-1 booyah-box box-control">
+      <%= image_tag 'splurty.jpg', class: 'img-thumbnail image-control' %>
+      <h3>
+        <%= link_to 'Splurty', "https://splurty-saa-stephen-a.herokuapp.com/" %>
+      </h3>
+      <p>Splurty is a simple site with which all users can store motivational quotes that are randomly loaded to the screen</p>
+    </div>
+    <div class="col-xs-3 booyah-box box-control">
+      <%= image_tag 'nomster.jpg', class: 'img-thumbnail image-control' %>
+      <h3>
+        <%= link_to 'Nomster', "https://nomster-stephen-akuffo.herokuapp.com/" %>
+      </h3>
+      <p>
+        Nomster is an app that allows users to sign up and share and discuss places they have been to.
+        This was built with the city of Toronto in mind.
+      </p>
+    </div>
+    <div class="col-xs-3 booyah-box box-control">
+      <%= image_tag 'colorg.jpg', class: 'img-thumbnail image-control' %>
+      <h3>
+        <%= link_to 'The Color Game', 'http://codepen.io/saakuffo/full/KVWVNN/' %>
+      </h3>
+      <p>
+        This is a simple Javascript matching game where you try to guess which box matches the the stated RGB color code.
+      </p>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class ="row">
+    <div class="col-xs-3 col-xs-offset-1 booyah-box box-control">
+      <%= image_tag 'pong.jpg', class: 'img-thumbnail image-control' %>
+      <h3>
+        <%= link_to 'Simple Pong', 'http://codepen.io/saakuffo/full/YWNZEJ/' %>
+      </h3>
+      <p>
+        Pong is a classic game and it is recreated here with a simple clone.
+        Player 1 uses the 'W' and 'S' keys, Player 2 users the 'Up' and 'Down' arrow keys
+      </p>
+    </div>
+    <div class="col-xs-3 booyah-box box-control">
+      <%= image_tag 'stodo.jpg', class: 'img-thumbnail image-control' %>
+      <h3>
+        <%= link_to "Simple TODO", 'http://codepen.io/saakuffo/full/vLxegL/' %>
+      </h3>
+      <p>
+        A non-persistent todo list to experiment with CSS and Javascript.
+      </p>
+    </div>
+  </div>
+</div>

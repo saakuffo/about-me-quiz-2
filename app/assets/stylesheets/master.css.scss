@@ -1,0 +1,44 @@
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #EDEDED;
+  border-radius: 15px;
+  background-color: #EDEDED;
+}
+
+.box-control {
+  margin: 0 2.5%;
+}
+
+.image-control {
+  height: 500px;
+  width: 500px;
+  margin-top: 4%;
+  border-radius: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+.header-control {
+
+}
+
+.text-center{
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; 
+  color: #30093D
+}
+
+
+
+body {
+  background: url('aboutbg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
