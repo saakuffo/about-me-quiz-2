@@ -10,12 +10,17 @@
 }
 
 .box-control {
-  margin: 0 2.5%;
+  height: 500px;
+  margin: 1.5% 1.5%;
+  padding: 2.5%;
+  display: block;
+  float: left;
 }
 
+
 .image-control {
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 280px;
   margin-top: 4%;
   border-radius: 15px;
 }
