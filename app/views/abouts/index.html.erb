@@ -11,19 +11,17 @@
   </p>
   </div>
 </div>
-
 <div class="clear">
 </div>
-
 <h1 class="text-center">My Projects</h1>
 <div class="container">
-  <div class ="row">
+
     <div class="col-xs-3 col-xs-offset-1 booyah-box box-control">
-      <%= image_tag 'splurty.jpg', class: 'img-thumbnail image-control' %>
+      <%= image_tag @test.photolink , class: 'img-thumbnail image-control' %>
       <h3>
-        <%= link_to 'Splurty', "https://splurty-saa-stephen-a.herokuapp.com/" %>
+        <%= link_to @test.appname , @test.demo %>
       </h3>
-      <p>Splurty is a simple site with which all users can store motivational quotes that are randomly loaded to the screen.</p>
+      <p><%= @test.description %></p>
     </div>
     <div class="col-xs-3 booyah-box box-control">
       <%= image_tag 'nomster.jpg', class: 'img-thumbnail image-control' %>
@@ -44,10 +42,6 @@
         This is a simple Javascript matching game where you try to guess which box matches the the stated RGB color code.
       </p>
     </div>
-  </div>
-  <br />
-  <br />
-  <div class ="row">
     <div class="col-xs-3 col-xs-offset-1 booyah-box box-control">
       <%= image_tag 'pong.jpg', class: 'img-thumbnail image-control' %>
       <h3>
@@ -67,5 +61,5 @@
         A non-persistent todo list to experiment with CSS and Javascript.
       </p>
     </div>
-  </div>
+  
 </div>
