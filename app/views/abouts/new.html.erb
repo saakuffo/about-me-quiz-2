@@ -1,1 +1,15 @@
-<h1>Add new Project</h1>
+<div class="col-xs-10 col-xs-offset-1 booyah-box box-control">
+<h1 class='text-center'>Add new Project</h1>
+<%= simple_form_for @projects, url:abouts_path(@about) do |f| %>
+  <%= f.input :appname %>
+  <%= f.input :languages %>
+  <%= f.input :description %>
+  <%= f.input :demo %>
+  <%= f.input :photolink %>
+  <br>
+  <%= f.submit 'Add Project', class: 'btn btn-danger' %>
+  <%= link_to "Cancel", root_path, class: 'btn btn-warning' %>
+  <br>
+  <br class="clear">
+<% end %>
+</div>

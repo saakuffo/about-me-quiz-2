@@ -13,53 +13,17 @@
 </div>
 <div class="clear">
 </div>
-<h1 class="text-center">My Projects</h1>
+<h1 class="text-center">My Projects <%=link_to '(Add Project)', new_about_path, class: 'small-text' %></h1>
 <div class="container">
-
-    <div class="col-xs-3 col-xs-offset-1 booyah-box box-control">
-      <%= image_tag @test.photolink , class: 'img-thumbnail image-control' %>
-      <h3>
-        <%= link_to @test.appname , @test.demo %>
-      </h3>
-      <p><%= @test.description %></p>
-    </div>
+  <% @projects.each do |project| %>
     <div class="col-xs-3 booyah-box box-control">
-      <%= image_tag 'nomster.jpg', class: 'img-thumbnail image-control' %>
+      <%= image_tag project.photolink, class: 'img-thumbnail image-control' %>
       <h3>
-        <%= link_to 'Nomster', "https://nomster-stephen-akuffo.herokuapp.com/" %>
+        <%= link_to project.appname, project.demo %>
       </h3>
       <p>
-        Nomster is an app that allows users to sign up and share and discuss places they have been to.
-        This was built with the city of Toronto in mind.
+        <%= project.description %>
       </p>
     </div>
-    <div class="col-xs-3 booyah-box box-control">
-      <%= image_tag 'colorg.jpg', class: 'img-thumbnail image-control' %>
-      <h3>
-        <%= link_to 'The Color Game', 'http://codepen.io/saakuffo/full/KVWVNN/' %>
-      </h3>
-      <p>
-        This is a simple Javascript matching game where you try to guess which box matches the the stated RGB color code.
-      </p>
-    </div>
-    <div class="col-xs-3 col-xs-offset-1 booyah-box box-control">
-      <%= image_tag 'pong.jpg', class: 'img-thumbnail image-control' %>
-      <h3>
-        <%= link_to 'Simple Pong', 'http://codepen.io/saakuffo/full/YWNZEJ/' %>
-      </h3>
-      <p>
-        Pong is a classic game and it is recreated here with a simple clone.
-        Player 1 uses the 'W' and 'S' keys, Player 2 users the 'Up' and 'Down' arrow keys.
-      </p>
-    </div>
-    <div class="col-xs-3 booyah-box box-control">
-      <%= image_tag 'stodo.jpg', class: 'img-thumbnail image-control' %>
-      <h3>
-        <%= link_to "Simple TODO", 'http://codepen.io/saakuffo/full/vLxegL/' %>
-      </h3>
-      <p>
-        A non-persistent todo list to experiment with CSS and Javascript.
-      </p>
-    </div>
-  
+  <% end %>
 </div>

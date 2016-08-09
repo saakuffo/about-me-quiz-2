@@ -33,7 +33,9 @@
   color: #30093D
 }
 
-
+.small-text {
+  font-size: 16px; 
+}
 
 body {
   background: url('aboutbg.jpg') no-repeat center center fixed;
@@ -42,3 +44,4 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
